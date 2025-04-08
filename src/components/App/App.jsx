@@ -3,16 +3,16 @@ import SearchBox from '../SearchBox/SearchBox';
 import ContactList from '../ContactList/ContactList'
 import css from './App.module.css'
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContact, selectIsError, selectIsLoading } from '../../redux/contactsSlice';
+import { selectContacts, selectError, selectLoading } from '../../redux/contactsSlice';
 import { useEffect } from 'react';
 import { fetchContacts } from '../../redux/contactsOps';
 
 function App() {
   
   const dispstch = useDispatch();
-  const contacts = useSelector(selectContact);
-  const isLoading = useSelector(selectIsLoading);
-  const isError = useSelector(selectIsError);
+  const contacts = useSelector(selectContacts);
+  const isLoading = useSelector(selectLoading);
+  const isError = useSelector(selectError);
 
   useEffect(() => {
     dispstch(fetchContacts());
