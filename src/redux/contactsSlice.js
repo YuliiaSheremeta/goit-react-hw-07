@@ -8,6 +8,11 @@ export const selectLoading = (state) => state.contacts.loading;
 
 export const selectError = (state) => state.contacts.error;
 
+export const selectIsFormVisible = (state) => state.contacts.isFormVisible;
+
+export const selectIsSearchVisible = (state) => state.contacts.isSearchVisible;
+
+
 export const selectVisibleContacts = createSelector(
     [selectContacts, selectNameFilter],
     (contacts, filter) => {
@@ -21,8 +26,18 @@ const slice = createSlice({
     initialState: {
         items: [],
         loading: false,
-        error: null
+        error: null,
+        isFormVisible: false,
+        isSearchVisible: false,
+    }, reducers: {
+        toggleFormVisibility(state) {
+      state.isFormVisible = !state.isFormVisible;
     },
+        toggleSearchVisibility(state) {
+      state.isSearchVisible = !state.isSearchVisible;
+    },
+    },
+        
     extraReducers: (builder) => {
         builder.addCase(fetchContacts.pending, (state) => {
             state.loading = true;
@@ -50,5 +65,6 @@ const slice = createSlice({
     
 }
 );
+export const { toggleFormVisibility, toggleSearchVisibility } = slice.actions;
 export default slice.reducer;
 

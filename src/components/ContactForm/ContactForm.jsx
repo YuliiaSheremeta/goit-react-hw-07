@@ -4,6 +4,7 @@ import { addContact } from '../../redux/contactsOps';
 import { useId } from 'react';
 import { useDispatch } from 'react-redux';
 import css from './ContactForm.module.css';
+import { HiMiniUserCircle } from "react-icons/hi2";
 
 const ContactSchema = Yup.object().shape({
         name: Yup.string().min(3, 'Must be min 3 chars').max(50).required('This field is required!'),
@@ -33,6 +34,7 @@ export default function ContactForm() {
         
             onSubmit={handleSubmit}>
             <Form className={css.form}>
+                <HiMiniUserCircle className={css.user} />
                 <div className={css.container}>
                     <label className={css.label} htmlFor={idName} >Name</label>
                     <Field className={css.input} type='text' name='name' id={idName} />

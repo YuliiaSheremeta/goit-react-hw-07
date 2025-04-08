@@ -1,10 +1,8 @@
 .item{
     list-style: none;
-   
-   
+ 
 }
 .list{
-        margin-left: 30px;
-        padding-left: 0;
-        gap: 15px;
+gap: 15px;
+padding-left: 0;
 }

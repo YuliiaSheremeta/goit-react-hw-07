@@ -1,9 +1,15 @@
+.user{
+    width: 70px;
+    height: 60px;
+  
+}
+
 .form {
    
     margin-bottom: 50px;
     margin-left: 30px;
     width: 400px;
-    background-color: #ff6f61;
+    background-color: #4e4d4d;
     color: white;
     border-radius: 10px;
     padding: 20px;
@@ -19,7 +25,7 @@
 .button {
     border-radius: 4px;
     width: 140px;
-    background-color: #ff3b30;
+    background-color: #3e41d1;
     color: white;
     text-align: center;
     margin: 20px;
