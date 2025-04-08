@@ -14,8 +14,8 @@ export default function Contact({ contact }) {
     return (
         <div className={css.contactcard}>
             <div>
-                <p> <ImUser/> {contact.name}</p>
-                <p> <ImPhone/> {contact.number}</p>
+                <p> <ImUser className={css.icon} /> {contact.name}</p>
+                <p> <ImPhone className={css.icon} /> {contact.number}</p>
             </div>
             <button className={css.deletebutton} type="button" onClick={handleDeleteContact}> <AiFillDelete /> </button>
         </div>

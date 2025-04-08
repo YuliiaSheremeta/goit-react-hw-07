@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
-   background-color: #ff6f61;
+
     margin-left: 30px;
     width: 370px;
     padding: 15px;
     color: white;
-    border-radius: 10px;
+   
     width: 410px;
 }
 
@@ -17,4 +17,5 @@
 .input{
     height: 25px;
     border-radius: 4px;
+    background-color: rgb(213, 218, 218);
 }

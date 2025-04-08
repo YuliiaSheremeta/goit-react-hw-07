@@ -9,7 +9,7 @@
     margin-bottom: 50px;
     margin-left: 30px;
     width: 400px;
-    background-color: #4e4d4d;
+    background-color: #585656;
     color: white;
     border-radius: 10px;
     padding: 20px;
@@ -36,7 +36,7 @@
 
 .button:hover,
 .button:focus {
-    background-color: #d32f2f;
+    background-color: #ea3642;
 }
 
 .label {
@@ -44,7 +44,7 @@
 }
 
 .error {
-    color: rgb(119, 4, 4);
+    color: rgb(231, 155, 111);
 }
 .input{
     border-radius: 4px;

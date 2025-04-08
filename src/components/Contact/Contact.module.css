@@ -5,7 +5,8 @@
   
     border-radius: 10px;
    
-    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     
     margin: 10px;
    
@@ -43,4 +44,15 @@
 .deletebutton:hover {
     background-color: #d32f2f;
  
+}
+.icon{
+   fill: #0a0a0a;
+   width: 20px;
+   height: 20px;
+   margin-right: 10px;
+   transform: fill;
+  
+}
+.icon:hover{
+fill:aliceblue;
 }
