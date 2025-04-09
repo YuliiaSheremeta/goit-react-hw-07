@@ -14,9 +14,11 @@ import { NavLink } from "react-router-dom";
 function App() {
   
   const dispatch = useDispatch();
+
   const contacts = useSelector(selectContacts);
   const isLoading = useSelector(selectLoading);
   const isError = useSelector(selectError);
+  
   const isFormVisible = useSelector(selectIsFormVisible);
   const isSearchVisible = useSelector(selectIsSearchVisible);
 

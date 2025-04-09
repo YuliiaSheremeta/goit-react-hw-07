@@ -13,7 +13,7 @@ export const selectIsFormVisible = (state) => state.contacts.isFormVisible;
 export const selectIsSearchVisible = (state) => state.contacts.isSearchVisible;
 
 
-export const selectVisibleContacts = createSelector(
+export const selectFilteredContacts = createSelector(
     [selectContacts, selectNameFilter],
     (contacts, filter) => {
         return contacts.filter((contact) => contact.name.toLowerCase().includes(filter.toLowerCase())
